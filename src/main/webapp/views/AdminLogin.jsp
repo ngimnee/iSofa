@@ -87,7 +87,7 @@ body {
 		<div class="card shadow-lg">
 			<div class="text-center mb-6">
 				<h3 class="text-2xl font-bold text-gray-800">Đăng nhập</h3>
-				<p class="text-gray-600">Hệ thống quản trị 
+				<p class="text-gray-600">Hệ thống nội thất 
 					<span class="text-orange-500 font-semibold">iSofa</span>
 				</p>
 			</div>
