@@ -5,9 +5,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static final String URL = "jdbc:mysql://localhost:3307/ban_ghe_sofa";
+//    private static final String URL = "jdbc:mysql://localhost:3306/ban_ghe_sofa";
+
+    private static final String URL = "jdbc:mysql://localhost:3306/isofa";
     private static final String USER = "root";
-    private static final String PASSWORD = "12345"; // sửa theo cấu hình của bạn
+    private static final String PASSWORD = "12345";
 
 
     public static Connection getConnection() {

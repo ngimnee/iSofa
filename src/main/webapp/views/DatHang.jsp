@@ -5,7 +5,7 @@
 SanPham sanPham = (SanPham) request.getAttribute("sanPham");
 Integer soLuong = (Integer) request.getAttribute("soLuong");
 if (sanPham == null || soLuong == null) {
-    response.sendRedirect(request.getContextPath() + "/trang-chu?error=missingData");
+    response.sendRedirect(request.getContextPath() + "/san-pham?error=missingData");
     return;
 }
 double giaKhuyenMai = sanPham.getGiaKhuyenMai();

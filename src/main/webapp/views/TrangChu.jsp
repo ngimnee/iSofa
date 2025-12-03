@@ -61,9 +61,9 @@
             						<span class="d-inline-block">Giỏ hàng</span>
         						</button>
     						</form>
-    						<button class="btn btn-user ml-2" data-toggle="modal" data-target="#adminLoginModal">
+    						<a class="btn btn-user ml-2" href="<%=request.getContextPath()%>/login-admin">
         						<i class="fa fa-user-circle" aria-hidden="true"></i>
-    						</button>
+    						</a>
 						</div>
 					</div>
 				</div>
@@ -304,27 +304,6 @@
 			</div>
 		</div>
 	</footer>
-	
-	<!-- Modal thông báo -->
-	<div class="modal fade" id="adminLoginModal" tabindex="-1" role="dialog" aria-labelledby="adminLoginModalLabel" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
-        	<div class="modal-content">
-            	<div class="modal-header">
-                	<h5 class="modal-title" id="adminLoginModalLabel">Thông báo</h5>
-                	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    	<span aria-hidden="true">&times;</span>
-                	</button>
-            	</div>
-            	<div class="modal-body">
-                	Bạn chỉ có thể thực hiện chức năng này khi là admin. Bạn vẫn muốn tiếp tục?
-            	</div>
-            	<div class="modal-footer">
-                	<a href="<%=request.getContextPath()%>/login-admin" class="btn btn-primary">Đăng nhập</a>
-                	<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-            	</div>
-        	</div>
-    	</div>
-	</div>
 
 	<!-- Bootstrap 5.3 JS -->
 	<!-- jQuery (BẮT BUỘC - Bootstrap 4 cần jQuery) -->

@@ -69,8 +69,9 @@ iframe {
 					<div class="row align-items-center">
 						<div class="col-md-3">
 							<div class="logo">
-								<a href="<%=request.getContextPath()%>/san-pham">
-									<img src="<%=request.getContextPath() + "/images/logo.png"%>" alt="Logo" />
+								<a href="<%=request.getContextPath()%>/san-pham"> <img
+									src="<%=request.getContextPath() + "/images/logo.png"%>"
+									alt="Logo" />
 								</a>
 							</div>
 						</div>
@@ -97,16 +98,20 @@ iframe {
 								<h5>0348363413 - 077777777</h5>
 							</div>
 						</div>
-						<div class="col-md-2 d-flex align-items-center justify-content-end">
-    						<form action="<%=request.getContextPath()%>/giohang" method="post">
-        						<button type="submit" class="btn btn-cart d-flex align-items-center">
-            						<i class="fa fa-cart-plus mr-2" aria-hidden="true"></i> 
-            						<span class="d-inline-block">Giỏ hàng</span>
-        						</button>
-    						</form>
-    						<button class="btn btn-user ml-2" data-toggle="modal" data-target="#adminLoginModal">
-        						<i class="fa fa-user-circle" aria-hidden="true"></i>
-    						</button>
+						<div
+							class="col-md-2 d-flex align-items-center justify-content-end">
+							<form action="<%=request.getContextPath()%>/giohang"
+								method="post">
+								<button type="submit"
+									class="btn btn-cart d-flex align-items-center">
+									<i class="fa fa-cart-plus mr-2" aria-hidden="true"></i> <span
+										class="d-inline-block">Giỏ hàng</span>
+								</button>
+							</form>
+							<a class="btn btn-user ml-2"
+								href="<%=request.getContextPath()%>/login-admin"> <i
+								class="fa fa-user-circle" aria-hidden="true"></i>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -128,17 +133,24 @@ iframe {
 								<li class="nav-item"><a class="nav-link"
 									href="<%=request.getContextPath()%>/san-pham">Trang chủ</a></li>
 								<li class="nav-item dropdown"><a
-                                    class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"> Danh mục </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Sofa">Sofa</a>
-                                        <a class="dropdown-item" href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Bàn trà">Bàn trà</a>
-                                        <a class="dropdown-item" href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Bàn ăn">Bàn ăn</a>
-                                        <a class="dropdown-item" href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Tủ Giường">Tủ Giường</a>
-                                        <a class="dropdown-item" href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Ghế thư giãn">Ghế thư giãn</a>
-                                    </div></li>
-								<li class="nav-item"><a class="nav-link" href="GioiThieu.jsp">giới thiệu</a></li>
+									class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+									role="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false"> Danh mục </a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item"
+											href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Sofa">Sofa</a>
+										<a class="dropdown-item"
+											href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Bàn trà">Bàn
+											trà</a> <a class="dropdown-item"
+											href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Bàn ăn">Bàn
+											ăn</a> <a class="dropdown-item"
+											href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Tủ Giường">Tủ
+											Giường</a> <a class="dropdown-item"
+											href="<%=request.getContextPath()%>/danh-muc?tenDanhMuc=Ghế thư giãn">Ghế
+											thư giãn</a>
+									</div></li>
+								<li class="nav-item"><a class="nav-link"
+									href="GioiThieu.jsp">giới thiệu</a></li>
 
 								<li class="nav-item"><a class="nav-link"
 									href="<%=request.getContextPath()%>/san-pham?action=daGiao">Sản
@@ -148,8 +160,8 @@ iframe {
 										class="sr-only"></span></a></li>
 								<li class="nav-item"><a class="nav-link"
 									href="https://www.facebook.com/isofafurniture">Facebook</a></li>
-								<li class="nav-item"><a class="nav-link"
-									href="#">Liên hệ</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Liên
+										hệ</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -183,41 +195,23 @@ iframe {
 				</div>
 			</div>
 			<div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29862.641045613094!2d106.22565790775522!3d20.67648882668459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135eb5bd81e6cb7%3A0x2c751faca03cff2b!2zTmd1ecOqbiBIb8OgLCBQaMO5IEPhu6ssIEjGsG5nIFnDqm4sIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1746414629571!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29862.641045613094!2d106.22565790775522!3d20.67648882668459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135eb5bd81e6cb7%3A0x2c751faca03cff2b!2zTmd1ecOqbiBIb8OgLCBQaMO5IEPhu6ssIEjGsG5nIFnDqm4sIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1746414629571!5m2!1svi!2s"
+					width="600" height="450" style="border: 0;" allowfullscreen=""
+					loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</div>
-
-
-
-
 	</div>
 
-	    <!-- Modal thông báo -->
-	<div class="modal fade" id="adminLoginModal" tabindex="-1" role="dialog" aria-labelledby="adminLoginModalLabel" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
-        	<div class="modal-content">
-            	<div class="modal-header">
-                	<h5 class="modal-title" id="adminLoginModalLabel">Thông báo</h5>
-                	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    	<span aria-hidden="true">&times;</span>
-                	</button>
-            	</div>
-            	<div class="modal-body">
-                	Bạn chỉ có thể thực hiện chức năng này khi là admin. Bạn vẫn muốn tiếp tục?
-            	</div>
-            	<div class="modal-footer">
-                	<a href="<%=request.getContextPath()%>/login-admin" class="btn btn-primary">Đăng nhập</a>
-                	<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-            	</div>
-        	</div>
-    	</div>
-	</div>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<!-- Popper -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<!-- Bootstrap 4 JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<!-- Popper -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<!-- Bootstrap 4 JS -->
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>

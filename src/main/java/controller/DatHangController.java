@@ -44,11 +44,39 @@ public class DatHangController extends HttpServlet {
     public void init() throws ServletException {
         datHangDAO = new DatHangDAO();
     }
+    
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html; charset=UTF-8");
+
+        HttpSession session = request.getSession(false);
+        if (session == null || session.getAttribute("user") == null) {
+            session = request.getSession(true);
+            session.setAttribute("redirectAfterLogin", request.getRequestURL().toString());
+            response.sendRedirect(request.getContextPath() + "/views/AdminLogin.jsp?requireLogin=1");
+            return;
+        }
+
+        request.getRequestDispatcher("/views/DatHang.jsp").forward(request, response);
+    }
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html; charset=UTF-8");
+        
+        HttpSession session = request.getSession(false);
+        if (session == null || session.getAttribute("user") == null) {
+            session = request.getSession(true);
+            session.setAttribute("redirectAfterLogin", request.getRequestURL().toString());
+            response.sendRedirect(request.getContextPath() + "/views/AdminLogin.jsp?requireLogin=1");
+            return;
+        }
+
 
         String action = request.getParameter("action");
         try {
